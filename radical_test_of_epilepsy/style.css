@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main_field {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.color_changer {
+  width: 100%;
+  height: 100vh;
+  animation: changeColors 2s infinite; /* keyframe */
+}
+
+.box-btn {
+  margin: auto auto;
+}
+
+.start-button {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.stop-button {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: 700;
+  color: rgb(213, 213, 213);
+  border-radius: 10px;
+}
+
+@keyframes changeColors {
+  0% {
+    background-color: rgb(255, 204, 0);
+  }
+  10% {
+    background-color: rgb(255, 255, 255);
+  }
+  20% {
+    background-color: rgb(0, 235, 0);
+  }
+  30% {
+    background-color: rgb(230, 230, 10);
+  }
+  40% {
+    background-color: rgb(251, 3, 3);
+  }
+  50% {
+    background-color: rgb(7, 7, 233);
+  }
+  60% {
+    background-color: rgb(189, 0, 206);
+  }
+  70% {
+    background-color: rgb(20, 128, 182);
+  }
+  80% {
+    background-color: rgb(158, 3, 114);
+  }
+  90% {
+    background-color: rgb(243, 243, 6);
+  }
+  100% {
+    background-color: rgb(117, 117, 117);
+  }
+}
